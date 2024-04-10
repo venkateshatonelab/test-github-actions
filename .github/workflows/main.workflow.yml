@@ -1,7 +1,8 @@
-name: main-group
+name: main
 
 on:
-  merge_group:
+  pull_request:
+    types: [closed]
     branches:
       - main
 
