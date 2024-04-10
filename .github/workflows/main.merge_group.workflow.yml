@@ -1,4 +1,4 @@
-name: main-group
+name: main-merge-group
 
 on:
   merge_group:
@@ -12,6 +12,6 @@ jobs:
       - name: test
         run: |
           echo "**************************************************"
-          echo "                    MAIN GROUP                    "
+          echo "                 MAIN MERGE GROUP                 "
           echo "**************************************************"
           
