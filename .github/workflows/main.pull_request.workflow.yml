@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  user_service:
+  raised-pull-request:
     runs-on: self-hosted
     steps:
       - name: test

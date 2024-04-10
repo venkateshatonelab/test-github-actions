@@ -1,17 +1,17 @@
-name: main-merge-group
+name: main-group
 
 on:
   merge_group:
     branches:
-      - main
+      - feat-testing
 
 jobs:
-  user_service:
+  merge-group:
     runs-on: self-hosted
     steps:
       - name: test
         run: |
           echo "**************************************************"
-          echo "                   MERGE GROUP                    "
+          echo "                    MAIN GROUP                    "
           echo "**************************************************"
           
