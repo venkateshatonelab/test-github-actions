@@ -1,0 +1,16 @@
+name: main-pull-request
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  user_service:
+    runs-on: self-hosted
+    steps:
+      - name: test
+        run: |
+          echo "**************************************************"
+          echo "                   PULL REQUEST                   "
+          echo "**************************************************"
