@@ -1,16 +1,17 @@
-name: main-pull-request
+name: main-group
 
 on:
-  pull_request:
+  merge_group:
     branches:
       - main
 
 jobs:
-  user_service:
+  merge-to-main:
     runs-on: self-hosted
     steps:
       - name: test
         run: |
           echo "**************************************************"
-          echo "                   PULL REQUEST                   "
+          echo "                    MAIN GROUP                    "
           echo "**************************************************"
+          
